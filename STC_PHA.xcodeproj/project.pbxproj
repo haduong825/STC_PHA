@@ -74,6 +74,10 @@
 		9A30A26F2077619F0056417D /* RevenueSymmetricalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30A26E2077619F0056417D /* RevenueSymmetricalObject.swift */; };
 		9A30A2702077619F0056417D /* RevenueSymmetricalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30A26E2077619F0056417D /* RevenueSymmetricalObject.swift */; };
 		9A30A2712077619F0056417D /* RevenueSymmetricalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30A26E2077619F0056417D /* RevenueSymmetricalObject.swift */; };
+		9A42DF052085B21F00FE8299 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A42DF042085B21F00FE8299 /* Alamofire.framework */; };
+		9A49DA3B2085892A00F76EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49DA3A2085892A00F76EC5 /* User.swift */; };
+		9A49DA3C2085892A00F76EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49DA3A2085892A00F76EC5 /* User.swift */; };
+		9A49DA3D2085892A00F76EC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49DA3A2085892A00F76EC5 /* User.swift */; };
 		9A4FB8022081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB8012081E2D000244B12 /* GraphEstCollectViewController.swift */; };
 		9A4FB8032081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB8012081E2D000244B12 /* GraphEstCollectViewController.swift */; };
 		9A4FB8042081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB8012081E2D000244B12 /* GraphEstCollectViewController.swift */; };
@@ -170,7 +174,6 @@
 		9AA6EA0220767C590025F895 /* GraphExpenditureProvincialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6EA0120767C590025F895 /* GraphExpenditureProvincialViewController.swift */; };
 		9AA6EA0320767C590025F895 /* GraphExpenditureProvincialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6EA0120767C590025F895 /* GraphExpenditureProvincialViewController.swift */; };
 		9AA6EA0420767C590025F895 /* GraphExpenditureProvincialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6EA0120767C590025F895 /* GraphExpenditureProvincialViewController.swift */; };
-		9AE3330D2081BA640025E552 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE3330C2081BA640025E552 /* Alamofire.framework */; };
 		9AE3330F2081BA640025E552 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE3330E2081BA640025E552 /* SwiftyJSON.framework */; };
 		9AE333112081BB830025E552 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE333102081BB830025E552 /* APIManager.swift */; };
 		9AE333122081BB830025E552 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE333102081BB830025E552 /* APIManager.swift */; };
@@ -261,6 +264,8 @@
 		9A30A266207761510056417D /* TabRevSymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabRevSymViewController.swift; sourceTree = "<group>"; };
 		9A30A26A207761720056417D /* CustomRevSymTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRevSymTableViewCell.swift; sourceTree = "<group>"; };
 		9A30A26E2077619F0056417D /* RevenueSymmetricalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueSymmetricalObject.swift; sourceTree = "<group>"; };
+		9A42DF042085B21F00FE8299 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A49DA3A2085892A00F76EC5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A4FB8012081E2D000244B12 /* GraphEstCollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphEstCollectViewController.swift; sourceTree = "<group>"; };
 		9A4FB8052081E2E500244B12 /* DetailEstCollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEstCollectViewController.swift; sourceTree = "<group>"; };
 		9A4FB8092081E30D00244B12 /* TabEstCollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEstCollectViewController.swift; sourceTree = "<group>"; };
@@ -316,8 +321,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A42DF052085B21F00FE8299 /* Alamofire.framework in Frameworks */,
 				9AE333152081BC220025E552 /* ACProgressHUD_Swift.framework in Frameworks */,
-				9AE3330D2081BA640025E552 /* Alamofire.framework in Frameworks */,
 				9AE3330F2081BA640025E552 /* SwiftyJSON.framework in Frameworks */,
 				9AA6E9A4207657EB0025F895 /* Charts.framework in Frameworks */,
 				9AA6E9A6207657EB0025F895 /* Pods_STC_PHATests.framework in Frameworks */,
@@ -351,6 +356,7 @@
 		39E240B82E8B4CDB5112F0FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A42DF042085B21F00FE8299 /* Alamofire.framework */,
 				9AE333142081BC220025E552 /* ACProgressHUD_Swift.framework */,
 				9AE3330C2081BA640025E552 /* Alamofire.framework */,
 				9AE3330E2081BA640025E552 /* SwiftyJSON.framework */,
@@ -403,6 +409,7 @@
 		9A127A922076245D00181588 /* STC_PHA */ = {
 			isa = PBXGroup;
 			children = (
+				9A49DA39208588EA00F76EC5 /* Model */,
 				9AA6E9C220765BB00025F895 /* Extensions */,
 				9AA6E9C120765BA30025F895 /* Define */,
 				9AA6E9C020765B970025F895 /* Features */,
@@ -544,6 +551,14 @@
 			isa = PBXGroup;
 			children = (
 				9A30A26E2077619F0056417D /* RevenueSymmetricalObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A49DA39208588EA00F76EC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A49DA3A2085892A00F76EC5 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1010,6 +1025,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A49DA3B2085892A00F76EC5 /* User.swift in Sources */,
 				9A88CDD8207D062B00B769F4 /* TabExpBudViewController.swift in Sources */,
 				9AFDFAD520786691007EAE7E /* RevenueProvincialObject.swift in Sources */,
 				9AFDFAD12078666C007EAE7E /* GraphRevProViewController.swift in Sources */,
@@ -1096,6 +1112,7 @@
 				9A4FB80B2081E30D00244B12 /* TabEstCollectViewController.swift in Sources */,
 				9A88CDCD207D058D00B769F4 /* GraphExpBudViewController.swift in Sources */,
 				9A30A268207761520056417D /* TabRevSymViewController.swift in Sources */,
+				9A49DA3C2085892A00F76EC5 /* User.swift in Sources */,
 				9A4FB8072081E2E500244B12 /* DetailEstCollectViewController.swift in Sources */,
 				9A098859207DA76000D4FD47 /* CustomExpBudTableViewCell.swift in Sources */,
 				9A4FB8032081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */,
@@ -1152,6 +1169,7 @@
 				9A4FB80C2081E30D00244B12 /* TabEstCollectViewController.swift in Sources */,
 				9A88CDCE207D058D00B769F4 /* GraphExpBudViewController.swift in Sources */,
 				9A30A269207761520056417D /* TabRevSymViewController.swift in Sources */,
+				9A49DA3D2085892A00F76EC5 /* User.swift in Sources */,
 				9A4FB8082081E2E500244B12 /* DetailEstCollectViewController.swift in Sources */,
 				9A09885A207DA76000D4FD47 /* CustomExpBudTableViewCell.swift in Sources */,
 				9A4FB8042081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */,

@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import ACProgressHUD_Swift
 
 
 class APIManager {
@@ -22,8 +23,41 @@ class APIManager {
     
     
     
-//    private static var sharedAPIManager: APIManager = {
-//
-//    }
+    private static var sharedAPIManager: APIManager = {
+        let manager = APIManager(baseURL: URL(string: Constant.BASE_URL)!)
+        return manager
+    }()
     
+    class func shared() -> APIManager {
+        return sharedAPIManager
+    }
+    
+    func requestAPIApplicationWithURL(url: String,
+                                      methodType: HTTPMethod,
+                                      showLoading: Bool,
+                                      parameter: Parameters,
+                                      onSuccess success: @escaping(_ responseObject: DataResponse<Any>) -> Void?,
+                                      onFailure failure: @escaping(_ error: Error) -> Void?) {
+        
+        if showLoading == true {
+            ACProgressHUD.shared.showHUD()
+        } else {
+            ACProgressHUD.shared.hideHUD()
+        }
+        
+        let requestURL = Constant.BASE_URL + url
+        
+        Alamofire.request(requestURL, method: methodType, parameters: parameter).validate().responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                success(response)
+                ACProgressHUD.shared.hideHUD()
+                break
+            case .failure(_):
+                break
+            }
+        }
+        
+    }
 }

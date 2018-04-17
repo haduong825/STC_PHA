@@ -50,7 +50,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5y-Oa-5Z6">
                                         <rect key="frame" x="10" y="10" width="315" height="80"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mq8-wa-Cml">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" placeholder="Tên đăng nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mq8-wa-Cml">
                                                 <rect key="frame" x="20" y="5" width="290" height="70"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>
@@ -82,7 +82,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-ZA-Ftr">
                                         <rect key="frame" x="10" y="100" width="315" height="80"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-Cg-Ido">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abc@12345" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1q-Cg-Ido">
                                                 <rect key="frame" x="20" y="5" width="290" height="70"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="23"/>

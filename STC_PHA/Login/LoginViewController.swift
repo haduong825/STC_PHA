@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    let urlLogin = "/token"
+    var jsonResults = JSON()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +29,21 @@ class LoginViewController: UIViewController {
         let password = self.passwordTextField.text?.trimmingCharacters(in: .whitespaces)
         
         if username != "" && password != "" {
-            
+            let param = ["username": username!, "password": password!, "grant_type": "password"] as Parameters
+            APIManager.shared().requestAPIApplicationWithURL(url: urlLogin, methodType: .post, showLoading: true, parameter: param, onSuccess: { (response) -> Void? in
+                self.jsonResults = JSON(response.value!)
+                return nil
+            }) { (error) -> Void? in
+                print(error)
+            }
         }
     }
 
     @IBAction func loginButtonAction(_ sender: Any) {
-        let vc = UIStoryboard().instantiateNavHome()
-        UIApplication.shared.keyWindow?.rootViewController = vc
-        UIApplication.shared.keyWindow?.makeKeyAndVisible()
+        checkLogin()
+//        let vc = UIStoryboard().instantiateNavHome()
+//        UIApplication.shared.keyWindow?.rootViewController = vc
+//        UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
     
 
