@@ -12,7 +12,9 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var menuTableView: UITableView!
     
-    let arrMenuTitle = ["Tổng hợp thu chi toàn tỉnh", "Số thu trên tỉnh-huyện", "Thu NSNN theo phân cấp Tỉnh", "Chi tiết thu cân đối", "Chi tiết chi ngân sách", "Dự toán quyết toán thu", "Dự toán quyết toán chi"]
+    let defaults = UserDefaults.standard
+    
+    let arrMenuTitle = ["Tổng hợp thu chi toàn tỉnh", "Số thu trên tỉnh-huyện", "Thu NSNN theo phân cấp Tỉnh", "Chi tiết thu cân đối", "Chi tiết chi ngân sách", "Dự toán quyết toán thu", "Dự toán quyết toán chi", "Đăng xuất"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +75,13 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         if self.arrMenuTitle[indexPath.row] == "Dự toán quyết toán chi" {
             let vc = UIStoryboard().instantiateTabEstimateOut()
+            self.view.window?.rootViewController = vc
+            self.view.window?.makeKeyAndVisible()
+        }
+        
+        if self.arrMenuTitle[indexPath.row] == "Đăng xuất" {
+            defaults.setValue(nil, forKey: Constant.USER)
+            let vc = UIStoryboard().instantiateNavLogin()
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
         }

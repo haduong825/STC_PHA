@@ -49,12 +49,23 @@ class APIManager {
         
         Alamofire.request(requestURL, method: methodType, parameters: parameter).validate().responseJSON { (response) in
             switch response.result {
-            case .success(let value):
-                let json = JSON(value)
+            case .success(_ ):
                 success(response)
                 ACProgressHUD.shared.hideHUD()
                 break
-            case .failure(_):
+            case .failure(_ ):
+                var message: String = ""
+                if let httpStatusCode = response.response?.statusCode{
+                    switch(httpStatusCode) {
+                    case 400:
+                        message = "The user name or password is incorrect."
+                    default:
+                        break                    }
+                }
+                ACProgressHUD.shared.hideHUD()
+                let vc = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                vc.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: true, completion: nil)
                 break
             }
         }

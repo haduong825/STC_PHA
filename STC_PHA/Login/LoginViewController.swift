@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     
     let urlLogin = "/token"
     var jsonResults = JSON()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +33,27 @@ class LoginViewController: UIViewController {
             let param = ["username": username!, "password": password!, "grant_type": "password"] as Parameters
             APIManager.shared().requestAPIApplicationWithURL(url: urlLogin, methodType: .post, showLoading: true, parameter: param, onSuccess: { (response) -> Void? in
                 self.jsonResults = JSON(response.value!)
+                self.setupData()
                 return nil
             }) { (error) -> Void? in
                 print(error)
             }
         }
     }
+    
+    func setupData() {
+        let curUser = User(self.jsonResults)
+        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: curUser)
+        defaults.set(encodedData, forKey: Constant.USER)
+        defaults.synchronize()
+        
+        let vc = UIStoryboard().instantiateNavHome()
+        UIApplication.shared.keyWindow?.rootViewController = vc
+        UIApplication.shared.keyWindow?.makeKeyAndVisible()
+    }
 
     @IBAction func loginButtonAction(_ sender: Any) {
         checkLogin()
-//        let vc = UIStoryboard().instantiateNavHome()
-//        UIApplication.shared.keyWindow?.rootViewController = vc
-//        UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
     
 

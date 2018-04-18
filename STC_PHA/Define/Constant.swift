@@ -23,4 +23,6 @@ class Constant {
     static let currencyText = "Đơn vị: triệu đồng"
     
     static let BASE_URL = "http://btsoftvn.com:9797"
+    
+    static let USER = "user"
 }
