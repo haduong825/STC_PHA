@@ -25,6 +25,7 @@ class TableExpenditureProViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtonMenu()
+        setupButtonShowDate()
         self.navigationItem.title = "BIỂU TỔNG HỢP THU CHI TOÀN TỈNH"
         self.currencyLabel.text = Constant.currencyText
     }

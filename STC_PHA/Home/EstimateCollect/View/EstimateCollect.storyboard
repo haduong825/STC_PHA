@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-jo-d7A" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="10" y="114" width="355" height="494"/>
+                                <rect key="frame" x="10" y="154.5" width="355" height="453.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị: Triệu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJP-Pp-woV">
-                                <rect key="frame" x="266.5" y="74" width="98.5" height="21"/>
+                                <rect key="frame" x="266.5" y="124" width="98.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,10 +32,10 @@
                         <constraints>
                             <constraint firstItem="820-LW-z6l" firstAttribute="trailing" secondItem="MJP-Pp-woV" secondAttribute="trailing" constant="10" id="7GU-3W-l7A"/>
                             <constraint firstItem="820-LW-z6l" firstAttribute="trailing" secondItem="Idt-jo-d7A" secondAttribute="trailing" constant="10" id="9cj-P9-l6n"/>
+                            <constraint firstItem="Idt-jo-d7A" firstAttribute="top" secondItem="MJP-Pp-woV" secondAttribute="bottom" constant="10" id="Rln-uv-vxa"/>
                             <constraint firstItem="820-LW-z6l" firstAttribute="bottom" secondItem="Idt-jo-d7A" secondAttribute="bottom" constant="10" id="WlQ-d5-0Gu"/>
-                            <constraint firstItem="Idt-jo-d7A" firstAttribute="top" secondItem="820-LW-z6l" secondAttribute="top" constant="50" id="hRS-la-QXh"/>
                             <constraint firstItem="Idt-jo-d7A" firstAttribute="leading" secondItem="820-LW-z6l" secondAttribute="leading" constant="10" id="uib-EB-dOd"/>
-                            <constraint firstItem="MJP-Pp-woV" firstAttribute="top" secondItem="820-LW-z6l" secondAttribute="top" constant="10" id="z5o-Nx-TjH"/>
+                            <constraint firstItem="MJP-Pp-woV" firstAttribute="top" secondItem="820-LW-z6l" secondAttribute="top" constant="60" id="z5o-Nx-TjH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="820-LW-z6l"/>
                     </view>

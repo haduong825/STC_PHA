@@ -32,6 +32,7 @@ class GraphExpenditureProvincialViewController: BaseViewController, ChartViewDel
         setupChart()
         barChartView.delegate = self
         currencyLabel.text = Constant.currencyText
+        setupButtonShowDate()
     }
 
     func setupChart() {

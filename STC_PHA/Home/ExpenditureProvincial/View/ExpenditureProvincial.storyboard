@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="khL-qf-eB7">
-                                <rect key="frame" x="0.0" y="164" width="375" height="454"/>
+                                <rect key="frame" x="0.0" y="212" width="375" height="406"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="exProCell" rowHeight="72" id="bHY-gY-D84" customClass="CustomExProTableViewCell" customModule="STC_PHA" customModuleProvider="target">
@@ -136,7 +136,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glk-rR-Ebw">
-                                <rect key="frame" x="0.0" y="114" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="162" width="375" height="50"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9Q-R0-4X4">
                                         <rect key="frame" x="0.0" y="0.0" width="132" height="50"/>
@@ -235,7 +235,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị: Triệu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-hS-zYx">
-                                <rect key="frame" x="268.5" y="76" width="98.5" height="21"/>
+                                <rect key="frame" x="268.5" y="124" width="98.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -246,11 +246,11 @@
                             <constraint firstItem="khL-qf-eB7" firstAttribute="top" secondItem="glk-rR-Ebw" secondAttribute="bottom" id="7hU-Fr-hJ3"/>
                             <constraint firstItem="2Qc-zI-Xew" firstAttribute="trailing" secondItem="glk-rR-Ebw" secondAttribute="trailing" id="8nY-du-Sc4"/>
                             <constraint firstItem="2Qc-zI-Xew" firstAttribute="bottom" secondItem="khL-qf-eB7" secondAttribute="bottom" id="AmO-nU-dHN"/>
-                            <constraint firstItem="glk-rR-Ebw" firstAttribute="top" secondItem="2Qc-zI-Xew" secondAttribute="top" constant="50" id="NSS-WJ-a0j"/>
                             <constraint firstItem="2Qc-zI-Xew" firstAttribute="trailing" secondItem="khL-qf-eB7" secondAttribute="trailing" id="VSz-vI-4oi"/>
                             <constraint firstItem="khL-qf-eB7" firstAttribute="leading" secondItem="2Qc-zI-Xew" secondAttribute="leading" id="jII-2S-ISx"/>
                             <constraint firstItem="2Qc-zI-Xew" firstAttribute="trailing" secondItem="dhu-hS-zYx" secondAttribute="trailing" constant="8" id="t8S-m3-QGl"/>
-                            <constraint firstItem="dhu-hS-zYx" firstAttribute="top" secondItem="2Qc-zI-Xew" secondAttribute="top" constant="12" id="tGO-oL-Jqx"/>
+                            <constraint firstItem="dhu-hS-zYx" firstAttribute="top" secondItem="2Qc-zI-Xew" secondAttribute="top" constant="60" id="tGO-oL-Jqx"/>
+                            <constraint firstItem="glk-rR-Ebw" firstAttribute="top" secondItem="dhu-hS-zYx" secondAttribute="bottom" constant="17" id="vyN-7g-2Dv"/>
                             <constraint firstItem="glk-rR-Ebw" firstAttribute="leading" secondItem="2Qc-zI-Xew" secondAttribute="leading" id="wzV-vL-ubd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Qc-zI-Xew"/>
@@ -275,11 +275,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72b-av-V8g" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="10" y="114" width="355" height="494"/>
+                                <rect key="frame" x="10" y="164" width="355" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị: Triệu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDR-Vq-bke">
-                                <rect key="frame" x="266.5" y="74" width="98.5" height="21"/>
+                                <rect key="frame" x="266.5" y="124" width="98.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -287,10 +287,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="72b-av-V8g" firstAttribute="top" secondItem="GFO-lb-nCs" secondAttribute="top" constant="50" id="Mq5-Mw-yY9"/>
                             <constraint firstItem="GFO-lb-nCs" firstAttribute="trailing" secondItem="hDR-Vq-bke" secondAttribute="trailing" constant="10" id="RNg-1U-Ln2"/>
                             <constraint firstItem="GFO-lb-nCs" firstAttribute="bottom" secondItem="72b-av-V8g" secondAttribute="bottom" constant="10" id="css-0r-DMp"/>
-                            <constraint firstItem="hDR-Vq-bke" firstAttribute="top" secondItem="GFO-lb-nCs" secondAttribute="top" constant="10" id="i6s-Jj-46j"/>
+                            <constraint firstItem="72b-av-V8g" firstAttribute="top" secondItem="hDR-Vq-bke" secondAttribute="bottom" constant="19" id="hPc-i6-7NL"/>
+                            <constraint firstItem="hDR-Vq-bke" firstAttribute="top" secondItem="GFO-lb-nCs" secondAttribute="top" constant="60" id="i6s-Jj-46j"/>
                             <constraint firstItem="GFO-lb-nCs" firstAttribute="trailing" secondItem="72b-av-V8g" secondAttribute="trailing" constant="10" id="jAG-62-yL9"/>
                             <constraint firstItem="72b-av-V8g" firstAttribute="leading" secondItem="GFO-lb-nCs" secondAttribute="leading" constant="10" id="vTb-DI-yld"/>
                         </constraints>

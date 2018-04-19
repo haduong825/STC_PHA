@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEU-OU-fX6" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="64" width="375" height="544"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="484"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị: Triệu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu5-Zo-CQ1">
                                         <rect key="frame" x="269" y="10" width="96" height="21"/>
@@ -37,7 +37,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kEU-OU-fX6" firstAttribute="top" secondItem="lEB-i9-kWQ" secondAttribute="top" id="Ehi-wB-c8f"/>
+                            <constraint firstItem="kEU-OU-fX6" firstAttribute="top" secondItem="lEB-i9-kWQ" secondAttribute="top" constant="60" id="Ehi-wB-c8f"/>
                             <constraint firstItem="kEU-OU-fX6" firstAttribute="leading" secondItem="lEB-i9-kWQ" secondAttribute="leading" id="abI-Ho-qRd"/>
                             <constraint firstItem="lEB-i9-kWQ" firstAttribute="bottom" secondItem="kEU-OU-fX6" secondAttribute="bottom" constant="10" id="alz-3m-juW"/>
                             <constraint firstItem="lEB-i9-kWQ" firstAttribute="trailing" secondItem="kEU-OU-fX6" secondAttribute="trailing" id="bN0-wz-SSE"/>

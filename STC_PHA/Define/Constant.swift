@@ -22,7 +22,8 @@ class Constant {
     static let currencyNumber = 1000000
     static let currencyText = "Đơn vị: triệu đồng"
     
-    static let BASE_URL = "http://192.168.1.99:9797/API/Mobile"
+    static let BASE_URL = "http://192.168.1.99:9797"
+    static let SUB_URL = "/API/Mobile"
     
     static let USER = "user"
 }
