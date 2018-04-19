@@ -36,6 +36,7 @@ class APIManager {
                                       methodType: HTTPMethod,
                                       showLoading: Bool,
                                       parameter: Parameters,
+                                      header: HTTPHeaders?,
                                       onSuccess success: @escaping(_ responseObject: DataResponse<Any>) -> Void?,
                                       onFailure failure: @escaping(_ error: Error) -> Void?) {
         
@@ -47,7 +48,8 @@ class APIManager {
         
         let requestURL = Constant.BASE_URL + url
         
-        Alamofire.request(requestURL, method: methodType, parameters: parameter).validate().responseJSON { (response) in
+                
+        Alamofire.request(requestURL, method: methodType, parameters: parameter, headers: header).validate().responseJSON { (response) in
             switch response.result {
             case .success(_ ):
                 success(response)

@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class TabExpBudViewController: UITabBarController {
     
     var arrExpBud = [ExpenditureBudgetObject]()
+    let defaults = UserDefaults.standard
+    let urlExPro = "/MBLPHACNSDP/GetReport"
+    var jsonResults = JSON()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,22 @@ class TabExpBudViewController: UITabBarController {
     }
 
     func initData() {
+        
+        
+        let decoded  = defaults.object(forKey: Constant.USER) as? Data
+        let decodedUser = NSKeyedUnarchiver.unarchiveObject(with: decoded!) as! User
+        let header: HTTPHeaders = ["Authorization": "Bearer \(decodedUser.access_token)"]
+        let param = ["SHKB": decodedUser.maDBHC, "NAM": 2017, "DONVITINH": 1000000] as Parameters
+        
+        APIManager.shared().requestAPIApplicationWithURL(url: urlExPro, methodType: .post, showLoading: true, parameter: param, header: header, onSuccess: { (response) -> Void? in
+            self.jsonResults = JSON(response.value!)
+            return nil
+        }) { (error) -> Void? in
+            print(error)
+        }
+    }
+    
+    func setupData() {
         let eb0 = ExpenditureBudgetObject(name: "Tỉnh", expBudget: "11298303365081", lost: "282000000000")
         let eb1 = ExpenditureBudgetObject(name: "Huyện", expBudget: "5617813381800", lost: "50")
         let eb2 = ExpenditureBudgetObject(name: "Xã", expBudget: "2839626531508", lost: "51")

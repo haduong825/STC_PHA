@@ -66,4 +66,14 @@ class User: NSObject, NSCoding {
         self.issued = aDecoder.decodeObject(forKey: "maDBHC") as! String
         self.expires = aDecoder.decodeObject(forKey: "expires") as! String
     }
+    
+    func loadFromUserDefault() -> User? {
+        let defaults = UserDefaults.standard
+        if let decoded = defaults.object(forKey: Constant.USER) as? Data {
+            let decodedUser = NSKeyedUnarchiver.unarchiveObject(with: decoded) as! User
+            return decodedUser
+        } else {
+            return nil
+        }
+    }
 }
