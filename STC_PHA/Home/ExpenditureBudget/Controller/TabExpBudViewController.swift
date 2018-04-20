@@ -21,6 +21,7 @@ class TabExpBudViewController: UITabBarController {
         super.viewDidLoad()
 
         initData()
+        setupData()
         GraphExpBudViewController().sharedInstance.arrExpBud = arrExpBud
         DetailExpBudViewController().sharedInstance.arrExpBud = arrExpBud
     }

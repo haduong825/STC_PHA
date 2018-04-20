@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
             let param = ["username": username!, "password": password!, "grant_type": "password"] as Parameters
             APIManager.shared().requestAPIApplicationWithURL(url: urlLogin, methodType: .post, showLoading: true, parameter: param, header: nil, onSuccess: { (response) -> Void? in
                 self.jsonResults = JSON(response.value!)
+                print(self.jsonResults)
                 self.setupData()
                 return nil
             }) { (error) -> Void? in

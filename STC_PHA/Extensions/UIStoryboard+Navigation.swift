@@ -52,6 +52,10 @@ extension UIStoryboard {
         return UIStoryboard(name: "EstimateOut", bundle: .main)
     }
     
+    func editURLStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "EditURL", bundle: .main)
+    }
+    
     func instantiateNavLogin() -> UIViewController {
         return loginStoryboard().instantiateViewController(withIdentifier: "navLogin")
     }
@@ -100,6 +104,12 @@ extension UIStoryboard {
     
     func instantiateTabEstimateOut() -> SlideMenuController {
         let nav = estimateOutStoryboard().instantiateViewController(withIdentifier: "TabEstOutViewController") as! UITabBarController
+        let menu = menuStoryboard().instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        return SlideMenuController(mainViewController: nav, leftMenuViewController: menu)
+    }
+    
+    func instantiateNAVEditURL() -> SlideMenuController {
+        let nav = editURLStoryboard().instantiateViewController(withIdentifier: "navEdit") as! UINavigationController
         let menu = menuStoryboard().instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         return SlideMenuController(mainViewController: nav, leftMenuViewController: menu)
     }

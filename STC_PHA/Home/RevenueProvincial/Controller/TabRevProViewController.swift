@@ -20,6 +20,7 @@ class TabRevProViewController: UITabBarController {
         super.viewDidLoad()
 
         initData()
+        setupData()
         DetailRevProViewController().sharedInstance.arrRevPro = arrRevPro
         GraphRevProViewController().sharedInstance.arrRevPro = arrRevPro
     }

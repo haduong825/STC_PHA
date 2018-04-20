@@ -7,9 +7,19 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
 
-struct ExpendProvinObject {
-    let name: String?
-    let money: String?
-    let year: String?
+class ExpendProvinObject {
+    let name: String
+    let money: String
+    
+    init(name: String, money: String) {
+        self.money = money
+        self.name = name
+    }
+    
+    
 }
+
+

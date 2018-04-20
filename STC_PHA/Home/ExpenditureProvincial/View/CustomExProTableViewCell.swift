@@ -12,7 +12,6 @@ class CustomExProTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
-    @IBOutlet weak var yearLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,9 +25,8 @@ class CustomExProTableViewCell: UITableViewCell {
     }
     
     func setDataForExPro(ep: ExpendProvinObject) {
-        self.nameLabel.text = ep.name!
-        self.moneyLabel.text = ep.money!.currencyFormatter
-        self.yearLabel.text = ep.year!
+        self.nameLabel.text = ep.name
+        self.moneyLabel.text = ep.money
     }
 
 }

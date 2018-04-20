@@ -20,6 +20,7 @@ class TabRevDistViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
+        setupData()
         DetailRevDistViewController().sharedInstance.arrRevDist = arrRevDist
         GraphRevDistViewController().sharedInstance.arrRevDist = arrRevDist
     }

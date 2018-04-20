@@ -20,6 +20,7 @@ class TabRevSymViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
+        setupData()
         DetailRevSymViewController().sharedInstance.arrRevSym = arrRevSym
         GraphRevSymViewController().sharedInstance.arrRevSym = arrRevSym
     }

@@ -12,32 +12,22 @@ import SlideMenuControllerSwift
 let WIDTH_BTN = 10
 let HEIGHT_BTN = 10
 
-class BaseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class BaseViewController: UIViewController {
     
     let defaultsBase = UserDefaults.standard
-    var pickerData = [[String]]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setColorForBar()
         
-        var pickerYear = [String]()
-        var pickerMonth = [String]()
-        for i in 1...12 {
-            pickerMonth.append(String(i))
-        }
-        for i in 2016...2026 {
-            pickerYear.append(String(i))
-        }
-        pickerData = [pickerMonth, pickerYear]
-        setupChooseTime()
+        
+        
     }
     
-    func setupChooseTime() {
-        let chooseTimeView = Bundle.main.loadNibNamed("ChooseTime", owner: self, options: nil)?.first as? ChosseTime
-        chooseTimeView?.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)
-        self.view.addSubview(chooseTimeView!)
+    @objc func setupChooseTime() {
+        
     }
     
     public func setupButtonBackWithSelector(sel: Selector) {
@@ -102,26 +92,19 @@ class BaseViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @objc func showPickerView() {
-        let picker = Bundle.main.loadNibNamed("PickerTimeUIView", owner: self, options: nil)?.first as? PickerTimeUIView
-        picker?.frame = CGRect(x: 0, y: self.view.bounds.height - 200, width: self.view.bounds.width, height: 200)
-        picker?.timePickerView!.delegate = self
-        picker?.timePickerView!.dataSource = self
         
-        UIApplication.shared.keyWindow?.addSubview(picker!)
+        let st = UIStoryboard(name: "ChooseDate", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "ChooseDateViewController") as! ChooseDateViewController
+        self.present(vc, animated: true, completion: nil)
+        
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 2
-    }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.pickerData[component].count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.pickerData[component][row]
-    }
     
 
 }
+
+
+
+
 
