@@ -21,10 +21,10 @@ class HomeViewController: BaseViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rp0 = RevenueProvincialObject(name: "Trung ương", revPercent: "1243275167811", revDecent: "8000000000000")
-        let rp1 = RevenueProvincialObject(name: "Tỉnh", revPercent: "1507995685498", revDecent: "8300000000000")
-        let rp2 = RevenueProvincialObject(name: "Huyện", revPercent: "945871014063", revDecent: "1233378116864")
-        let rp3 = RevenueProvincialObject(name: "Xã", revPercent: "1142865744545", revDecent: "446629412009")
+        let rp0 = RevenueProvincialObject(name: "Trung ương", revPercent: 1243275167811, revDecent: 8000000000000)
+        let rp1 = RevenueProvincialObject(name: "Tỉnh", revPercent: 1507995685498, revDecent: 8300000000000)
+        let rp2 = RevenueProvincialObject(name: "Huyện", revPercent: 945871014063, revDecent: 1233378116864)
+        let rp3 = RevenueProvincialObject(name: "Xã", revPercent: 1142865744545, revDecent: 446629412009)
         
         arrRevPro.append(rp0)
         arrRevPro.append(rp1)
@@ -38,11 +38,9 @@ class HomeViewController: BaseViewController, ChartViewDelegate {
 
     func setupChart() {
         for i in 0..<arrRevPro.count {
-            times.append(arrRevPro[i].name!)
-            units.append(arrRevPro[i].revPercent!.double)
-            units1.append(arrRevPro[i].revDecent!.double)
-            //            units.append(Double(sharedInstance.arrRevPro[i].revPercent!.currencyFormatter.doubleFromCurrency))
-            //            units1.append(Double(sharedInstance.arrRevPro[i].revDecent!.currencyFormatter.removeCharacter(character: ","))!)
+            times.append(arrRevPro[i].name)
+            units.append(arrRevPro[i].revPercent)
+            units1.append(arrRevPro[i].revDecent)
         }
         setChart(dataPoints: times, values: units, valueSeconds: units1)
     }

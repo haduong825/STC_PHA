@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ACProgressHUD_Swift
 
 class MenuViewController: UIViewController {
 
@@ -91,6 +92,8 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
             self.view.window?.rootViewController = vc
             self.view.window?.makeKeyAndVisible()
         }
+        
+        ACProgressHUD.shared.showHUD()
     }
     
 }

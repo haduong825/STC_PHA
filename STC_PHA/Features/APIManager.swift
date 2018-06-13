@@ -46,7 +46,7 @@ class APIManager {
             ACProgressHUD.shared.hideHUD()
         }
         
-        let requestURL = Constant.BASE_URL + url
+        let requestURL = "http://" + getURL() + url
         
                 
         Alamofire.request(requestURL, method: methodType, parameters: parameter, headers: header).validate().responseJSON { (response) in

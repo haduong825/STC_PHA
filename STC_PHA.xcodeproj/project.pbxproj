@@ -111,6 +111,9 @@
 		9A4FB82D2081F14F00244B12 /* CustomEstOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB82C2081F14F00244B12 /* CustomEstOutTableViewCell.swift */; };
 		9A4FB82E2081F14F00244B12 /* CustomEstOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB82C2081F14F00244B12 /* CustomEstOutTableViewCell.swift */; };
 		9A4FB82F2081F14F00244B12 /* CustomEstOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FB82C2081F14F00244B12 /* CustomEstOutTableViewCell.swift */; };
+		9A81DE6120A692AF00AE4055 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81DE6020A692AF00AE4055 /* TabExpBudViewController.swift */; };
+		9A81DE6220A692AF00AE4055 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81DE6020A692AF00AE4055 /* TabExpBudViewController.swift */; };
+		9A81DE6320A692AF00AE4055 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A81DE6020A692AF00AE4055 /* TabExpBudViewController.swift */; };
 		9A88CDC7207CF75E00B769F4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDC6207CF75E00B769F4 /* Double+Extensions.swift */; };
 		9A88CDCC207D058D00B769F4 /* GraphExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCB207D058D00B769F4 /* GraphExpBudViewController.swift */; };
 		9A88CDCD207D058D00B769F4 /* GraphExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCB207D058D00B769F4 /* GraphExpBudViewController.swift */; };
@@ -118,9 +121,6 @@
 		9A88CDD0207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */; };
 		9A88CDD1207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */; };
 		9A88CDD2207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */; };
-		9A88CDD8207D062B00B769F4 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDD7207D062B00B769F4 /* TabExpBudViewController.swift */; };
-		9A88CDD9207D062B00B769F4 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDD7207D062B00B769F4 /* TabExpBudViewController.swift */; };
-		9A88CDDA207D062B00B769F4 /* TabExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDD7207D062B00B769F4 /* TabExpBudViewController.swift */; };
 		9AA6E9A4207657EB0025F895 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A3207657EB0025F895 /* Charts.framework */; };
 		9AA6E9A6207657EB0025F895 /* Pods_STC_PHATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A5207657EB0025F895 /* Pods_STC_PHATests.framework */; };
 		9AA6E9A8207657EB0025F895 /* Pods_STC_PHAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A7207657EB0025F895 /* Pods_STC_PHAUITests.framework */; };
@@ -289,10 +289,10 @@
 		9A4FB8242081EF6100244B12 /* TabEstOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabEstOutViewController.swift; sourceTree = "<group>"; };
 		9A4FB8282081EF8800244B12 /* EstimateOutObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateOutObject.swift; sourceTree = "<group>"; };
 		9A4FB82C2081F14F00244B12 /* CustomEstOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEstOutTableViewCell.swift; sourceTree = "<group>"; };
+		9A81DE6020A692AF00AE4055 /* TabExpBudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabExpBudViewController.swift; sourceTree = "<group>"; };
 		9A88CDC6207CF75E00B769F4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		9A88CDCB207D058D00B769F4 /* GraphExpBudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphExpBudViewController.swift; sourceTree = "<group>"; };
 		9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpBudViewController.swift; sourceTree = "<group>"; };
-		9A88CDD7207D062B00B769F4 /* TabExpBudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabExpBudViewController.swift; sourceTree = "<group>"; };
 		9AA6E9A3207657EB0025F895 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA6E9A5207657EB0025F895 /* Pods_STC_PHATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_STC_PHATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA6E9A7207657EB0025F895 /* Pods_STC_PHAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_STC_PHAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +425,7 @@
 		9A127A922076245D00181588 /* STC_PHA */ = {
 			isa = PBXGroup;
 			children = (
+				9A1D7CB220C6460D006BBD04 /* Setting */,
 				9A49DA39208588EA00F76EC5 /* Model */,
 				9AA6E9C220765BB00025F895 /* Extensions */,
 				9AA6E9C120765BA30025F895 /* Define */,
@@ -432,7 +433,6 @@
 				9AA6E9AD207659B40025F895 /* Menu */,
 				9AA6E9AC207659AA0025F895 /* Home */,
 				9AA6E9AB207659A30025F895 /* Login */,
-				9AB0221B2089CB3B000FFB88 /* EditURL */,
 				9A127A932076245D00181588 /* AppDelegate.swift */,
 				9AA6E9AE207659F30025F895 /* SplashViewController.swift */,
 				9AA6E9FD207678880025F895 /* BaseViewController.swift */,
@@ -460,6 +460,14 @@
 				9A127AB52076246000181588 /* Info.plist */,
 			);
 			path = STC_PHAUITests;
+			sourceTree = "<group>";
+		};
+		9A1D7CB220C6460D006BBD04 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9AB0221B2089CB3B000FFB88 /* EditURL */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		9A30A22820772B8E0056417D /* View */ = {
@@ -610,9 +618,9 @@
 		9A88CDC8207D051F00B769F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A81DE6020A692AF00AE4055 /* TabExpBudViewController.swift */,
 				9A88CDCB207D058D00B769F4 /* GraphExpBudViewController.swift */,
 				9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */,
-				9A88CDD7207D062B00B769F4 /* TabExpBudViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -647,13 +655,13 @@
 			isa = PBXGroup;
 			children = (
 				9AB022122089A11A000FFB88 /* ChooseDate */,
-				9AA6E9E0207668F20025F895 /* ExpenditureProvincial */,
-				9AA6E9E520766A3D0025F895 /* RevenueDistrict */,
-				9AA6E9E620766A7E0025F895 /* RevenueProvincial */,
-				9AA6E9E720766C330025F895 /* RevenueSymmetrical */,
-				9AA6E9E820766C5F0025F895 /* ExpenditureBudget */,
-				9AE333162081DFCC0025E552 /* EstimateCollect */,
-				9AE333172081DFDD0025E552 /* EstimateOut */,
+				9AA6E9E0207668F20025F895 /* ThuChiToanTinh */,
+				9AA6E9E520766A3D0025F895 /* ThuTrenTinhHuyen */,
+				9AA6E9E620766A7E0025F895 /* ThuTheoPhanCapTinh */,
+				9AA6E9E720766C330025F895 /* CTThuCanDoi */,
+				9AA6E9E820766C5F0025F895 /* CTChiNganSach */,
+				9AE333162081DFCC0025E552 /* DTQTThu */,
+				9AE333172081DFDD0025E552 /* DTQTChi */,
 				9AA6E9B220765A480025F895 /* Home.storyboard */,
 				9AA6E9CB207663250025F895 /* HomeViewController.swift */,
 			);
@@ -698,54 +706,54 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		9AA6E9E0207668F20025F895 /* ExpenditureProvincial */ = {
+		9AA6E9E0207668F20025F895 /* ThuChiToanTinh */ = {
 			isa = PBXGroup;
 			children = (
 				9A30A22820772B8E0056417D /* View */,
 				9A30A22A20772BAD0056417D /* Controller */,
 				9A30A22920772BA20056417D /* Models */,
 			);
-			path = ExpenditureProvincial;
+			path = ThuChiToanTinh;
 			sourceTree = "<group>";
 		};
-		9AA6E9E520766A3D0025F895 /* RevenueDistrict */ = {
+		9AA6E9E520766A3D0025F895 /* ThuTrenTinhHuyen */ = {
 			isa = PBXGroup;
 			children = (
 				9A30A243207750170056417D /* Controller */,
 				9A30A242207750120056417D /* Model */,
 				9A30A2412077500B0056417D /* View */,
 			);
-			path = RevenueDistrict;
+			path = ThuTrenTinhHuyen;
 			sourceTree = "<group>";
 		};
-		9AA6E9E620766A7E0025F895 /* RevenueProvincial */ = {
+		9AA6E9E620766A7E0025F895 /* ThuTheoPhanCapTinh */ = {
 			isa = PBXGroup;
 			children = (
 				9A30A25A20775E520056417D /* Controller */,
 				9A30A25920775E4D0056417D /* View */,
 				9A30A25820775E480056417D /* Model */,
 			);
-			path = RevenueProvincial;
+			path = ThuTheoPhanCapTinh;
 			sourceTree = "<group>";
 		};
-		9AA6E9E720766C330025F895 /* RevenueSymmetrical */ = {
+		9AA6E9E720766C330025F895 /* CTThuCanDoi */ = {
 			isa = PBXGroup;
 			children = (
 				9A30A25D207760730056417D /* Model */,
 				9A30A25C2077606D0056417D /* View */,
 				9A30A25B207760640056417D /* Controller */,
 			);
-			path = RevenueSymmetrical;
+			path = CTThuCanDoi;
 			sourceTree = "<group>";
 		};
-		9AA6E9E820766C5F0025F895 /* ExpenditureBudget */ = {
+		9AA6E9E820766C5F0025F895 /* CTChiNganSach */ = {
 			isa = PBXGroup;
 			children = (
 				9A88CDCA207D053300B769F4 /* View */,
 				9A88CDC9207D052C00B769F4 /* Model */,
 				9A88CDC8207D051F00B769F4 /* Controller */,
 			);
-			path = ExpenditureBudget;
+			path = CTChiNganSach;
 			sourceTree = "<group>";
 		};
 		9AB022122089A11A000FFB88 /* ChooseDate */ = {
@@ -766,24 +774,24 @@
 			path = EditURL;
 			sourceTree = "<group>";
 		};
-		9AE333162081DFCC0025E552 /* EstimateCollect */ = {
+		9AE333162081DFCC0025E552 /* DTQTThu */ = {
 			isa = PBXGroup;
 			children = (
 				9AE3331E2081E0BD0025E552 /* Controller */,
 				9AE3331D2081E0B70025E552 /* Model */,
 				9AE3331C2081E0B10025E552 /* View */,
 			);
-			path = EstimateCollect;
+			path = DTQTThu;
 			sourceTree = "<group>";
 		};
-		9AE333172081DFDD0025E552 /* EstimateOut */ = {
+		9AE333172081DFDD0025E552 /* DTQTChi */ = {
 			isa = PBXGroup;
 			children = (
 				9A4FB8172081EDE200244B12 /* View */,
 				9A4FB8162081EDDC00244B12 /* Model */,
 				9A4FB8152081EDD400244B12 /* Controller */,
 			);
-			path = EstimateOut;
+			path = DTQTChi;
 			sourceTree = "<group>";
 		};
 		9AE3331C2081E0B10025E552 /* View */ = {
@@ -1068,7 +1076,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A49DA3B2085892A00F76EC5 /* User.swift in Sources */,
-				9A88CDD8207D062B00B769F4 /* TabExpBudViewController.swift in Sources */,
 				9AFDFAD520786691007EAE7E /* RevenueProvincialObject.swift in Sources */,
 				9AFDFAD12078666C007EAE7E /* GraphRevProViewController.swift in Sources */,
 				9AFE68E120777F3900E06C0D /* LoginViewController.swift in Sources */,
@@ -1082,6 +1089,7 @@
 				9A88CDC7207CF75E00B769F4 /* Double+Extensions.swift in Sources */,
 				9A4FB82D2081F14F00244B12 /* CustomEstOutTableViewCell.swift in Sources */,
 				9A88CDD0207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */,
+				9A81DE6120A692AF00AE4055 /* TabExpBudViewController.swift in Sources */,
 				9A30A2192077103B0056417D /* CustomExProTableViewCell.swift in Sources */,
 				9AA6E9C820765EA50025F895 /* UIStoryboard+Navigation.swift in Sources */,
 				9A30A225207719E00056417D /* TabExProViewController.swift in Sources */,
@@ -1145,7 +1153,6 @@
 				9A4FB82A2081EF8800244B12 /* EstimateOutObject.swift in Sources */,
 				9A30A26C207761720056417D /* CustomRevSymTableViewCell.swift in Sources */,
 				9A30A24A207750880056417D /* DetailRevDistViewController.swift in Sources */,
-				9A88CDD9207D062B00B769F4 /* TabExpBudViewController.swift in Sources */,
 				9AB022222089E5BF000FFB88 /* EditURLViewController.swift in Sources */,
 				9AFDFAE220786959007EAE7E /* TabRevProViewController.swift in Sources */,
 				9A30A264207761350056417D /* GraphRevSymViewController.swift in Sources */,
@@ -1163,6 +1170,7 @@
 				9A098859207DA76000D4FD47 /* CustomExpBudTableViewCell.swift in Sources */,
 				9A4FB8032081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */,
 				9A4FB8222081EF4700244B12 /* GraphEstOutViewController.swift in Sources */,
+				9A81DE6220A692AF00AE4055 /* TabExpBudViewController.swift in Sources */,
 				9A30A23F207735710056417D /* BalloonMarker.swift in Sources */,
 				9A4FB8262081EF6100244B12 /* TabEstOutViewController.swift in Sources */,
 				9A30A21620770BEE0056417D /* TableExpenditureProViewController.swift in Sources */,
@@ -1204,7 +1212,6 @@
 				9A4FB82B2081EF8800244B12 /* EstimateOutObject.swift in Sources */,
 				9A30A26D207761720056417D /* CustomRevSymTableViewCell.swift in Sources */,
 				9A30A24B207750880056417D /* DetailRevDistViewController.swift in Sources */,
-				9A88CDDA207D062B00B769F4 /* TabExpBudViewController.swift in Sources */,
 				9AB022232089E5BF000FFB88 /* EditURLViewController.swift in Sources */,
 				9AFDFAE320786959007EAE7E /* TabRevProViewController.swift in Sources */,
 				9A30A265207761350056417D /* GraphRevSymViewController.swift in Sources */,
@@ -1222,6 +1229,7 @@
 				9A09885A207DA76000D4FD47 /* CustomExpBudTableViewCell.swift in Sources */,
 				9A4FB8042081E2D000244B12 /* GraphEstCollectViewController.swift in Sources */,
 				9A4FB8232081EF4700244B12 /* GraphEstOutViewController.swift in Sources */,
+				9A81DE6320A692AF00AE4055 /* TabExpBudViewController.swift in Sources */,
 				9A30A240207735710056417D /* BalloonMarker.swift in Sources */,
 				9A4FB8272081EF6100244B12 /* TabEstOutViewController.swift in Sources */,
 				9A30A21720770BEE0056417D /* TableExpenditureProViewController.swift in Sources */,
@@ -1280,6 +1288,7 @@
 		9A127AB62076246000181588 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1340,6 +1349,7 @@
 		9A127AB72076246000181588 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1396,6 +1406,7 @@
 			baseConfigurationReference = 833255128EB465192D8F26CE /* Pods-STC_PHA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LX29HB7C7;
 				INFOPLIST_FILE = STC_PHA/Info.plist;
@@ -1406,6 +1417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "btsoftvn.com.STC-PHA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1416,6 +1428,7 @@
 			baseConfigurationReference = 9304180CAF8F465E4196C285 /* Pods-STC_PHA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3LX29HB7C7;
 				INFOPLIST_FILE = STC_PHA/Info.plist;
@@ -1426,6 +1439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "btsoftvn.com.STC-PHA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

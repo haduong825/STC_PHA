@@ -1,6 +1,6 @@
 //
 //  Constant.swift
-//  STC_PHA
+//  STC_PHA/Users/hhduong/Desktop/IOS/Company/STC_PHA/STC_PHA/Define/Constant.swift
 //
 //  Created by Hải Dương Hà on 4/5/18.
 //  Copyright © 2018 Hải Dương Hà. All rights reserved.
@@ -22,8 +22,8 @@ class Constant {
     static let currencyNumber = 1000000
     static let currencyText = "Đơn vị: triệu đồng"
     
-    static let BASE_URL = "http://192.168.1.99:9797"
-    static let SUB_URL = "/API/Mobile"
+    static let BASE_URL = "http://btsoftvn.com:9797"
+    static let SUB_URL = "/api/Mobile"
     
     static let USER = "user"
 }

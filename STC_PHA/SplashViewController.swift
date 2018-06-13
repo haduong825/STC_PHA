@@ -14,9 +14,9 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        checkStatus()
         
+        checkStatus()
+        checkDate()
     }
     
     func checkStatus() {
@@ -38,5 +38,37 @@ class SplashViewController: UIViewController {
 //
 //        }
     }
+    
+    func checkDate(){
+        let date = Date()
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: date)
+        if getTuThang() == nil {
+            UserDefaults.standard.set("1", forKey: "TuThang")
+            UserDefaults.standard.set("12", forKey: "DenThang")
+            UserDefaults.standard.set(String(year), forKey: "Nam")
+        }
+        
+    }
+    
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
