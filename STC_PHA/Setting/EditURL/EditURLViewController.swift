@@ -11,10 +11,16 @@ import UIKit
 class EditURLViewController: BaseViewController {
 
     @IBOutlet weak var urlTextField: UITextField!
+    @IBOutlet weak var preURLLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupButtonMenu()
+        if UserDefaults.standard.string(forKey: "BASE_URL") != nil {
+            self.preURLLabel.text = getURL()
+        } else {
+            self.preURLLabel.text = ""
+        }
+        
     }
 
     @IBAction func saveAction(_ sender: Any) {
@@ -32,6 +38,7 @@ class EditURLViewController: BaseViewController {
                 messageAlert = "Sửa URL thành công"
                 titleAction = "OK"
                 UserDefaults.standard.set(url, forKey: "BASE_URL")
+                self.dismiss(animated: true, completion: nil)
             } else {
                 titleAlert = "Lỗi"
                 messageAlert = "Nhập sai định dạng URL"

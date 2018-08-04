@@ -57,7 +57,12 @@ class LoginViewController: UIViewController {
         checkLogin()
     }
     
-
+    @IBAction func changeURLAction(_ sender: Any) {
+        let sb = UIStoryboard(name: "EditURL", bundle: .main)
+        let vcURL = sb.instantiateViewController(withIdentifier: "EditURLViewController") as! EditURLViewController
+        self.present(vcURL, animated: true, completion: nil)
+    }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {

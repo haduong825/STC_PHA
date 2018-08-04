@@ -38,13 +38,7 @@ func isInternetAvailable() -> Bool
 }
 
 func getURL() -> String {
-    if let url = UserDefaults.standard.string(forKey: "BASE_URL"){
-        return url
-    } else {
-        let url = "btsoftvn.com:9797"
-        UserDefaults.standard.set(url, forKey: "BASE_URL")
-        return url
-    }
+    return UserDefaults.standard.string(forKey: "BASE_URL")!
 }
 
 func getTuThang() -> String?{
