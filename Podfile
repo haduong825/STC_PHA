@@ -9,6 +9,8 @@ target 'STC_PHA' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 4.7'
   pod 'ACProgressHUD-Swift', '~> 1.3' 
+  pod 'AppCenter'
+
 
   # Pods for STC_PHA
 

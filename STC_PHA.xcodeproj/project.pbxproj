@@ -122,8 +122,6 @@
 		9A88CDD1207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */; };
 		9A88CDD2207D05BB00B769F4 /* DetailExpBudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */; };
 		9AA6E9A4207657EB0025F895 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A3207657EB0025F895 /* Charts.framework */; };
-		9AA6E9A6207657EB0025F895 /* Pods_STC_PHATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A5207657EB0025F895 /* Pods_STC_PHATests.framework */; };
-		9AA6E9A8207657EB0025F895 /* Pods_STC_PHAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A7207657EB0025F895 /* Pods_STC_PHAUITests.framework */; };
 		9AA6E9AA207657EB0025F895 /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA6E9A9207657EB0025F895 /* SlideMenuControllerSwift.framework */; };
 		9AA6E9AF207659F30025F895 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E9AE207659F30025F895 /* SplashViewController.swift */; };
 		9AA6E9B120765A3B0025F895 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E9B020765A3B0025F895 /* Login.storyboard */; };
@@ -294,8 +292,6 @@
 		9A88CDCB207D058D00B769F4 /* GraphExpBudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphExpBudViewController.swift; sourceTree = "<group>"; };
 		9A88CDCF207D05BB00B769F4 /* DetailExpBudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpBudViewController.swift; sourceTree = "<group>"; };
 		9AA6E9A3207657EB0025F895 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA6E9A5207657EB0025F895 /* Pods_STC_PHATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_STC_PHATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA6E9A7207657EB0025F895 /* Pods_STC_PHAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_STC_PHAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA6E9A9207657EB0025F895 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA6E9AE207659F30025F895 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9AA6E9B020765A3B0025F895 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -341,8 +337,6 @@
 				9AE333152081BC220025E552 /* ACProgressHUD_Swift.framework in Frameworks */,
 				9AE3330F2081BA640025E552 /* SwiftyJSON.framework in Frameworks */,
 				9AA6E9A4207657EB0025F895 /* Charts.framework in Frameworks */,
-				9AA6E9A6207657EB0025F895 /* Pods_STC_PHATests.framework in Frameworks */,
-				9AA6E9A8207657EB0025F895 /* Pods_STC_PHAUITests.framework in Frameworks */,
 				9AA6E9AA207657EB0025F895 /* SlideMenuControllerSwift.framework in Frameworks */,
 				B9DFE829A7FB48F6671E6DBC /* Pods_STC_PHA.framework in Frameworks */,
 			);
@@ -377,8 +371,6 @@
 				9AE3330C2081BA640025E552 /* Alamofire.framework */,
 				9AE3330E2081BA640025E552 /* SwiftyJSON.framework */,
 				9AA6E9A3207657EB0025F895 /* Charts.framework */,
-				9AA6E9A5207657EB0025F895 /* Pods_STC_PHATests.framework */,
-				9AA6E9A7207657EB0025F895 /* Pods_STC_PHAUITests.framework */,
 				9AA6E9A9207657EB0025F895 /* SlideMenuControllerSwift.framework */,
 				6D147E270554656E4A2DA97D /* Pods_STC_PHA.framework */,
 				58E26E01AAD5CF1142B18C49 /* Pods_STC_PHATests.framework */,
@@ -1011,25 +1003,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-STC_PHA/Pods-STC_PHA-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ACProgressHUD-Swift/ACProgressHUD_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STC_PHA/Pods-STC_PHA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACProgressHUD_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STC_PHA/Pods-STC_PHA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STC_PHA/Pods-STC_PHA-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STC_PHA/Pods-STC_PHA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C461391E0EA304A9CBC1929D /* [CP] Check Pods Manifest.lock */ = {
