@@ -54,8 +54,8 @@ class GraphEstOutViewController: BaseViewController, ChartViewDelegate {
     }
     
     func setupData(){
-        let ec0 = EstimateOutObject(name: "Dự toán thu", money: self.jsonResults["Data"]["DT"].double! / Double(Constant.currencyNumber))
-        let ec1 = EstimateOutObject(name: "Quyết toán thu", money: self.jsonResults["Data"]["QT"].double! / Double(Constant.currencyNumber))
+        let ec0 = EstimateOutObject(name: "Dự toán thu", money: self.jsonResults["Data"]["DT"].double ?? 0 / Double(Constant.currencyNumber))
+        let ec1 = EstimateOutObject(name: "Quyết toán thu", money: self.jsonResults["Data"]["QT"].double ?? 0 / Double(Constant.currencyNumber))
         self.arrEstOut.append(ec0)
         self.arrEstOut.append(ec1)
         DetailEstOutViewController().sharedInstance.arrEstOut = self.arrEstOut

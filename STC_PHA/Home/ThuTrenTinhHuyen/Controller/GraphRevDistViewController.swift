@@ -71,35 +71,38 @@ class GraphRevDistViewController: BaseViewController, ChartViewDelegate {
         for i in 0..<json.count{
             var temp = ""
             switch (json[i]["SHKB"].string) {
-            case "27":
+            case "15":
                 temp = "Tỉnh";
                 break;
-            case "258":
-                temp = "Yên Phong";
+            case "132":
+                temp = "Thành Phố Yên Bái";
                 break;
-            case "264":
-                temp = "Lương Tài";
+            case "133":
+                temp = "Thị xã Nghĩa Lộ";
                 break;
-            case "260":
-                temp = "Tiên Du";
+            case "135":
+                temp = "Huyện Lục Yên";
                 break;
-            case "259":
-                temp = "Quế Võ";
+            case "136":
+                temp = "Huyện Văn Yên";
                 break;
-            case "262":
-                temp = "Thuận Thành";
+            case "137":
+                temp = "Huyện Mù Cang Chải";
                 break;
-            case "256":
-                temp = "TP Bắc Ninh";
+            case "138":
+                temp = "Huyện Trấn Yên";
                 break;
-            case "261":
-                temp = "Từ Sơn";
+            case "139":
+                temp = "Huyện Trạm Tấu";
                 break;
-            case "263":
-                temp = "Gia Bình";
+            case "140":
+                temp = "Huyện Văn Chấn";
+                break;
+            case "141":
+                temp = "Huyện Yên Bình";
                 break;
             default:
-                temp = "Tỉnh Bắc Ninh";
+                temp = "Tỉnh Yên Bái";
                 break;
             }
             let revDist = RevenueDistrictObject(name: temp, money: json[i]["SOTIEN"].double! / Double(Constant.currencyNumber))

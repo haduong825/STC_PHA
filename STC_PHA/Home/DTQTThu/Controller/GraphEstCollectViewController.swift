@@ -54,8 +54,8 @@ class GraphEstCollectViewController: BaseViewController, ChartViewDelegate {
     }
     
     func setupData(){
-        let ec0 = EstimateCollectObject(name: "Dự toán thu", money: self.jsonResults["Data"]["DT"].double! / Double(Constant.currencyNumber))
-        let ec1 = EstimateCollectObject(name: "Quyết toán thu", money: self.jsonResults["Data"]["QT"].double! / Double(Constant.currencyNumber))
+        let ec0 = EstimateCollectObject(name: "Dự toán thu", money: self.jsonResults["Data"]["DT"].double ?? 0 / Double(Constant.currencyNumber))
+        let ec1 = EstimateCollectObject(name: "Quyết toán thu", money: self.jsonResults["Data"]["QT"].double ?? 0 / Double(Constant.currencyNumber))
         self.arrEstCol.append(ec0)
         self.arrEstCol.append(ec1)
         DetailEstCollectViewController().sharedInstance.arrEstCol = arrEstCol

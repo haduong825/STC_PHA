@@ -38,12 +38,12 @@ class GraphExpBudViewController: BaseViewController, ChartViewDelegate {
     }
     
     func getData(json: JSON) {
-        let T_CCD = json["Data"]["T_CCD"].double!
-        let T_CTN = json["Data"]["T_CTN"].double!
-        let H_CCD = json["Data"]["H_CCD"].double!
-        let H_CTN = json["Data"]["H_CTN"].double!
-        let X_CCD = json["Data"]["X_CCD"].double!
-        let X_CTN = json["Data"]["X_CTN"].double!
+        let T_CCD = json["Data"]["T_CCD"].double ?? 0
+        let T_CTN = json["Data"]["T_CTN"].double ?? 0
+        let H_CCD = json["Data"]["H_CCD"].double ?? 0
+        let H_CTN = json["Data"]["H_CTN"].double ?? 0
+        let X_CCD = json["Data"]["X_CCD"].double ?? 0
+        let X_CTN = json["Data"]["X_CTN"].double ?? 0
         
         let eb0 = ExpenditureBudgetObject(name: "Tỉnh", expBudget: T_CCD, lost: T_CTN)
         let eb1 = ExpenditureBudgetObject(name: "Huyện", expBudget: H_CCD, lost: H_CTN)

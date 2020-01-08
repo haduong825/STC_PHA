@@ -66,12 +66,12 @@ class GraphRevSymViewController: BaseViewController, ChartViewDelegate {
     
     func setupData() {
         let json = jsonResults["Data"]
-        let rs0 = RevenueSymmetricalObject(name: "Thu điều tiết", money: json["T_DT"].double! / Double(Constant.currencyNumber))
-        let rs1 = RevenueSymmetricalObject(name: "Thu chuyển giao", money: json["T_CG"].double! / Double(Constant.currencyNumber))
-        let rs2 = RevenueSymmetricalObject(name: "Kết dư", money: json["T_KDNS"].double! / Double(Constant.currencyNumber))
-        let rs3 = RevenueSymmetricalObject(name: "Vay đầu tư", money: json["T_NNS"].double! / Double(Constant.currencyNumber))
-        let rs4 = RevenueSymmetricalObject(name: "Thu chuyển nguồn", money: json["T_CN"].double! / Double(Constant.currencyNumber))
-        let rs5 = RevenueSymmetricalObject(name: "Tạm thu", money: json["T_KBNN"].double! / Double(Constant.currencyNumber))
+        let rs0 = RevenueSymmetricalObject(name: "Thu điều tiết", money: json["T_DT"].double ?? 0 / Double(Constant.currencyNumber))
+        let rs1 = RevenueSymmetricalObject(name: "Thu chuyển giao", money: json["T_CG"].double ?? 0 / Double(Constant.currencyNumber))
+        let rs2 = RevenueSymmetricalObject(name: "Kết dư", money: json["T_KDNS"].double ?? 0 / Double(Constant.currencyNumber))
+        let rs3 = RevenueSymmetricalObject(name: "Vay đầu tư", money: json["T_NNS"].double ?? 0 / Double(Constant.currencyNumber))
+        let rs4 = RevenueSymmetricalObject(name: "Thu chuyển nguồn", money: json["T_CN"].double ?? 0 / Double(Constant.currencyNumber))
+        let rs5 = RevenueSymmetricalObject(name: "Tạm thu", money: json["T_KBNN"].double ?? 0 / Double(Constant.currencyNumber))
         
         arrRevSym.append(rs0)
         arrRevSym.append(rs1)
